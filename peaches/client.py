@@ -77,6 +77,10 @@ class Peaches(Bot):
     def format_datetime(self, time: datetime):
         return time.strftime("%d %B %Y, %X")
 
+    def oauth(self, client_id: int = None):
+        client_id = client_id or self.user.id
+        return discord.utils.oauth_url(client_id)
+
     @property
     def owner(self):
         if self._owner:
