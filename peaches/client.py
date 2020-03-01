@@ -13,7 +13,7 @@ from peaches.utils import config, logger, emoji, context
 
 class Peaches(Bot):
     def __init__(self, **kwargs):
-        self.config = config.File("../config.json")
+        self.config = config.File("config.json")
         super().__init__(command_prefix=self.config.default_prefix, description="Peaches PY",
                          owner_id=int(self.config.owner), **kwargs)
 
