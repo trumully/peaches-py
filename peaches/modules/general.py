@@ -19,7 +19,7 @@ class General(commands.Cog):
         uptime = datetime.timedelta(microseconds=(time.time_ns() - self.bot.start_time) / 1000)
         uptime = str(uptime).split(".")[0]
         embed = discord.Embed(
-            title=f"{self.bot.custom_emojis.minesoc} About: {self.bot.user.name} | ID: {self.bot.user.id}",
+            title=f"{self.bot.custom_emojis.bot} About: {self.bot.user.name} | ID: {self.bot.user.id}",
             description=f"{self.bot.description}\n"
                         f"Serving **{user_amount} users** on **{guild_amount} guilds**",
             color=self.bot.colors.neutral)
