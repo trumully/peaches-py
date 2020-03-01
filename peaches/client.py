@@ -30,6 +30,7 @@ class Peaches(Bot):
 
         self.statuses = cycle(["on the bee ride", "with a client", "with cora", "with coras corpse", "with the bugs",
                                "with her shit", "in an empty bath", "!help"])
+
         self.status = self.loop.create_task(self.change_status())
 
     async def _start(self):
@@ -53,7 +54,7 @@ class Peaches(Bot):
             await asyncio.sleep(30)
 
     async def on_ready(self):
-        self.dev_guild = self.get_guild(self.config.dev_guild)
+        self.dev_guild = self.get_guild(int(self.config.dev_guild))
         self._emojis.fetch_emojis(self.dev_guild)
         self._owner = self.get_user(self.owner_id)
 

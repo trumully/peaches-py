@@ -35,7 +35,7 @@ class General(commands.Cog):
 
     @commands.command()
     async def ping(self, ctx):
-        await ctx.send(f"🛰️ Pong! (Average websocket latency: {self.bot.latency * 1000}ms)")
+        await ctx.send(f"🛰️ Pong! (Average websocket latency: {round(self.bot.latency * 1000, 2)}ms)")
 
 
 def setup(bot):
