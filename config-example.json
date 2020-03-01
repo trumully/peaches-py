@@ -1,0 +1,9 @@
+{
+  "default_prefx": "YOUR DESIRED PREFIX",
+  "modules_path": "modules",
+  "webhook_url": "WEBHOOK URL HERE",
+  "webhook_id": "WEBHOOK CHANNEL ID HERE",
+  "dev_guild": "SECRET DEV GUILD ID",
+  "owner": "YOUR USER ID HERE",
+  "token": "YOUR BOT TOKEN HERE"
+}
