@@ -26,6 +26,7 @@ class Peaches(Bot):
                                           level=logging.INFO)
         self._discord_logger = logger.CustomLogger(name="discord", level=logging.INFO)
 
+        self.colors = config.ColorProxy()
         self._emojis = emoji.CustomEmojis()
 
         self.statuses = cycle(["on the bee ride", "with a client", "with cora", "with coras corpse", "with the bugs",
