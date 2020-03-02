@@ -89,6 +89,12 @@ class Fun(commands.Cog):
         await ctx.message.delete()
         await ctx.send(file=discord.File("video/fiesta.mp4"))
 
+    @commands.command()
+    @commands.cooldown(1, 20, commands.BucketType.user)
+    async def birthday(self, ctx):
+        await ctx.message.delete()
+        await ctx.send(file=discord.File("video/birthday.mp4"))
+
     # Error Handling
 
     @_8ball.error
